@@ -1,1 +1,142 @@
-e
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Post - SMAN 1 Cipatat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            /* Gradasi menyerupai poster */
+            background: linear-gradient(135deg, #f05a00 0%, #ed7e00 50%, #eab200 100%);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .ornament {
+            position: absolute;
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Ornamen Kanan Atas */
+        .ornament-1 {
+            top: 5%;
+            right: -10%;
+            width: 300px;
+            transform: rotate(15deg);
+        }
+
+        /* Ornamen Kiri Bawah */
+        .ornament-2 {
+            bottom: 20%;
+            left: -5%;
+            width: 250px;
+            transform: rotate(-20deg);
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col text-white overflow-x-hidden">
+
+    <!-- Ornamen Background -->
+    <svg class="ornament ornament-1" viewBox="0 0 100 100" fill="none" stroke="white" stroke-width="2">
+        <path d="M50 50 C 50 10, 90 10, 90 50 C 90 90, 50 90, 50 50 Z" />
+        <path d="M50 50 C 10 50, 10 10, 50 10 C 90 10, 90 50, 50 50 Z" transform="rotate(72 50 50)" />
+        <path d="M50 50 C 10 50, 10 10, 50 10 C 90 10, 90 50, 50 50 Z" transform="rotate(144 50 50)" />
+        <path d="M50 50 C 10 50, 10 10, 50 10 C 90 10, 90 50, 50 50 Z" transform="rotate(216 50 50)" />
+        <path d="M50 50 C 10 50, 10 10, 50 10 C 90 10, 90 50, 50 50 Z" transform="rotate(288 50 50)" />
+    </svg>
+
+    <svg class="ornament ornament-2" viewBox="0 0 100 100" fill="none" stroke="white" stroke-width="2">
+        <path d="M50 50 C 50 10, 90 10, 90 50 C 90 90, 50 90, 50 50 Z" />
+        <path d="M50 50 C 10 50, 10 10, 50 10 C 90 10, 90 50, 50 50 Z" transform="rotate(72 50 50)" />
+        <path d="M50 50 C 10 50, 10 10, 50 10 C 90 10, 90 50, 50 50 Z" transform="rotate(144 50 50)" />
+        <path d="M50 50 C 10 50, 10 10, 50 10 C 90 10, 90 50, 50 50 Z" transform="rotate(216 50 50)" />
+        <path d="M50 50 C 10 50, 10 10, 50 10 C 90 10, 90 50, 50 50 Z" transform="rotate(288 50 50)" />
+    </svg>
+
+    <!-- Header dengan Box Badge -->
+    <header class="w-full flex justify-center pt-8 content-wrapper">
+        <div class="bg-white rounded-full px-6 py-2 flex items-center gap-4 shadow-lg text-xs md:text-sm font-bold text-gray-800">
+            <span class="flex items-center gap-1">
+                <span class="w-5 h-5 bg-blue-500 rounded-full inline-block"></span> Disdik Jabar
+            </span>
+            <span class="w-px h-5 bg-gray-300"></span>
+            <span class="flex items-center gap-1">
+                <span class="w-5 h-5 bg-yellow-500 rounded-full inline-block"></span> Cadisdik VI
+            </span>
+            <span class="w-px h-5 bg-gray-300"></span>
+            <span class="flex items-center gap-1">
+                SMAN 1 CIPATAT
+            </span>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="flex-grow flex flex-col justify-center items-center text-center px-4 md:px-8 content-wrapper mt-8 md:mt-0">
+        
+        <h2 class="text-xl md:text-3xl italic font-light mb-2">Akses Informasi & Dokumentasi</h2>
+        <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-4 text-shadow leading-none">
+            PUBLIC<br>POST
+        </h1>
+        <h3 class="text-xl md:text-2xl font-bold mb-10 tracking-widest text-shadow bg-white text-[#ea580c] px-4 py-1 rounded-md inline-block">SMAN 1 CIPATAT</h3>
+
+        <!-- Deskripsi Civitas Akademika -->
+        <div class="max-w-2xl mb-12 px-6 border-y border-white/30 py-6 bg-black/10 rounded-xl backdrop-blur-sm">
+            <p class="text-lg md:text-xl font-medium mb-3">
+                Pusat arsip dan dokumentasi digital yang diperuntukkan khusus bagi seluruh Civitas Akademika SMAN 1 Cipatat.
+            </p>
+            <p class="text-sm md:text-base font-light opacity-90">
+                Temukan berbagai foto kegiatan, berkas publik, dan informasi resmi yang dikelola oleh OSIS, MPK, dan FPSH.
+            </p>
+        </div>
+
+        <!-- Tombol Link Google Drive -->
+        <a href="https://drive.google.com/drive/folders/1I3-D9gxrWA-p9nXe3_cScepBfBLGyODt" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="group relative inline-flex items-center gap-3 bg-white text-[#ea580c] font-bold text-lg md:text-xl py-4 px-8 rounded-full shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-gray-50 ring-4 ring-white/30 hover:ring-white/50">
+            <!-- Icon Google Drive -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.3 78" class="w-6 h-6 transition-transform group-hover:rotate-12">
+                <path d="m6.6 66.85 22.35 43.1 22.35-43.1zm44.7 0-22.35-43.1-22.35 43.1z" fill="#000000" fill-opacity="0"/>
+                <path d="M58.3 78 87.3 27.6 65 0 36 50.4z" fill="#34A853"/>
+                <path d="M58.3 78 22.3 78 0 39l22.3-39 22.3 39z" fill="#000000" fill-opacity="0"/>
+                <path d="M22.3 78H87.3L65 39H0z" fill="#4285F4"/>
+                <path d="M0 39 22.3 0h44.7L44.7 39z" fill="#FBBC05"/>
+            </svg>
+            Akses Folder Public Post
+        </a>
+        <p class="mt-5 text-sm font-light opacity-90">Klik tombol di atas untuk menuju Google Drive</p>
+
+    </main>
+
+    <!-- Footer / Footnote OSIS-MPK-FPSH -->
+    <footer class="w-full p-6 flex flex-col md:flex-row justify-between items-center text-xs md:text-sm font-medium opacity-90 content-wrapper border-t border-white/20 mt-12 bg-black/10">
+        <div class="text-center md:text-left mb-4 md:mb-0">
+            <p class="font-bold tracking-wider mb-1 text-base">OSIS-MPK-FPSH SMAN 1 CIPATAT</p>
+            <p class="font-light italic text-white/80">Dokumentasi Terpusat Civitas Akademika</p>
+        </div>
+        <div class="text-center md:text-right">
+            <p class="mb-1 text-white/80">Hubungi & Ikuti kami di Instagram</p>
+            <p class="font-bold">@oska.sman1cipatat | @fpsh.sman1cipatat</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+```
